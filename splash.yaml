@@ -1,0 +1,15 @@
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#000000"
+  image: assets/logo/logo_bird.png
+  image_dark: assets/logo/logo_bird.png
+
+
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#000000"
+    image: assets/logo/logo_bird.png
+    image_dark: assets/logo/logo_bird.png
+
+  web: false
+
