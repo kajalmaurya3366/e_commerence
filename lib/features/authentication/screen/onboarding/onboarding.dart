@@ -1,5 +1,4 @@
 import 'package:e_commerence/features/authentication/controllers/onBoarding/onBoarding_controller.dart';
-import 'package:e_commerence/features/authentication/screen/onboarding/widget/onBoarding_Skip.dart';
 import 'package:e_commerence/features/authentication/screen/onboarding/widget/on_boarding_dot_navigation.dart';
 import 'package:e_commerence/features/authentication/screen/onboarding/widget/on_boarding_nextbtn.dart';
 import 'package:e_commerence/features/authentication/screen/onboarding/widget/onboarding_Screen.dart';
@@ -25,7 +24,7 @@ class OnBoarding extends StatelessWidget {
         child: Stack(
           children: [
             // skip
-            OnBoardingSkipBtn(),
+            // OnBoardingSkipBtn(),
 
             // scroll page for boarding
             PageView(

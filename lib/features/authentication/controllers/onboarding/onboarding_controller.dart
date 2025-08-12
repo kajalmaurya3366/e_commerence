@@ -33,7 +33,6 @@ class OnBoardingController extends GetxController {
 
   void skipPage() {
     currentIndex.value = 2;
-    print("click on skip");
     pageController.jumpToPage(currentIndex.value);
   }
 }

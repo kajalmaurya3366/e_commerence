@@ -16,7 +16,6 @@ class OnBoardingNextBtn extends StatelessWidget {
       left: 0,
       bottom: KSizes.spaceBtwItems ,
       child: KElevatedButton(onPressed: () {
-        print("nextt");
         controller.nextPage();
       }, child: Obx(() => Text(controller.currentIndex.value==2 ? 'Get Started':"Next"))),
     );
