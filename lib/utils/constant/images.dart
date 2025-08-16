@@ -10,4 +10,8 @@ class KImages{
 
   static const String logoGoogle='assets/logo/logo_google.png';
   static const String logoFacebook='assets/logo/logo_facebook.png';
+
+
+  static const String mailSentImage='assets/images/img_mail_sent.png';
+  static const String successfulImage='assets/images/img_successful.png';
 }

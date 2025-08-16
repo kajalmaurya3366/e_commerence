@@ -1,5 +1,8 @@
 
+import 'package:e_commerence/features/authentication/screen/forget_password/forget_password.dart';
+import 'package:e_commerence/features/authentication/screen/signup/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/Widgets/Button/elevated_button.dart';
@@ -45,7 +48,7 @@ class KLoginForm extends StatelessWidget {
               ],
             ),
             // ------- Forget Pwd ------
-            TextButton(onPressed: () {}, child: Text(KTexts.forgetPassword)),
+            TextButton(onPressed: () => Get.to(ForgetPasswordScreen()), child: Text(KTexts.forgetPassword)),
           ],
         ),
         SizedBox(height: KSizes.spaceBtwItems),
@@ -57,7 +60,7 @@ class KLoginForm extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: OutlinedButton(
-            onPressed: () {},
+            onPressed: () => Get.to(() => SignUpScreen()),
             child: Text(KTexts.createAccount)
           ),
         ),

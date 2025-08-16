@@ -13,7 +13,7 @@ class OnBoardingSkipBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = OnBoardingController.instance;
-    print(controller.currentIndex.value);
+    // print(controller.currentIndex.value);
     return Obx(
       () => controller.currentIndex.value == 2
           ? SizedBox()
