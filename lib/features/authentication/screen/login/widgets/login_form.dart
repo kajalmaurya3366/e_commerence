@@ -1,6 +1,7 @@
 
 import 'package:e_commerence/features/authentication/screen/forget_password/forget_password.dart';
 import 'package:e_commerence/features/authentication/screen/signup/signup.dart';
+import 'package:e_commerence/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -54,7 +55,7 @@ class KLoginForm extends StatelessWidget {
         SizedBox(height: KSizes.spaceBtwItems),
 
         // --------- SIGN IN  ----------
-        KElevatedButton(onPressed: () {}, child: Text(KTexts.signIn)),
+        KElevatedButton(onPressed: () => Get.to(NavigationMenu()), child: Text(KTexts.signIn)),
         SizedBox(height: KSizes.spaceBtwItems / 2),
         // --------- CREATE ACCOUNT  ----------
         SizedBox(
