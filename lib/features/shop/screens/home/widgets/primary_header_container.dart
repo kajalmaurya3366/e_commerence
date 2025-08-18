@@ -2,7 +2,6 @@ import 'package:e_commerence/common/Widgets/custome_shape/clipper/rounded_edge_c
 import 'package:flutter/material.dart';
 
 import '../../../../../common/Widgets/custome_shape/clipper/circular_container.dart';
-import '../../../../../common/Widgets/custome_shape/clipper/custom_rounded_clipper.dart';
 import '../../../../../utils/constant/colors.dart';
 import '../../../../../utils/helpers/device_helper.dart';
 
