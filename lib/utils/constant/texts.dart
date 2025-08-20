@@ -57,5 +57,7 @@ class KTexts {
   static const createAccountTitle = "Your account successfully created";
   static const createAccountSubTitle = "Congratulation! Your account successfully created. You can now explore all the amazing features. Start personalizing your experience, and enjoy seemless access to your services. Let's get started!";
 
+  static const goodMoring='Good Morning';
+  static const unknownPro='Unknown Pro';
 
 }
