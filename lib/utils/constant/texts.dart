@@ -59,5 +59,6 @@ class KTexts {
 
   static const goodMoring='Good Morning';
   static const unknownPro='Unknown Pro';
+  static const searchBarTitle='Search in Store';
 
 }

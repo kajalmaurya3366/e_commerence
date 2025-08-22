@@ -1,9 +1,9 @@
 import 'package:e_commerence/common/Widgets/custome_shape/clipper/rounded_edge_container.dart';
+import 'package:e_commerence/utils/constant/sizes.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../common/Widgets/custome_shape/clipper/circular_container.dart';
 import '../../../../../utils/constant/colors.dart';
-import '../../../../../utils/helpers/device_helper.dart';
 
 class KPrimaryHeaderContainer extends StatelessWidget {
   const KPrimaryHeaderContainer({super.key, required this.child});
@@ -14,7 +14,7 @@ class KPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return KRoundedEdgeContainer(
       child: Container(
-        height: KDeviceHelper.getScreenHeight(context) * 0.4,
+        height: KSizes.homePrimaryHeaderHeight,
         color: KColors.primary,
         child: Stack(
           children: [
@@ -23,8 +23,8 @@ class KPrimaryHeaderContainer extends StatelessWidget {
               top: -150,
               right: -160,
               child: KCircularContainer(
-                height: KDeviceHelper.getScreenHeight(context) * 0.4,
-                width: KDeviceHelper.getScreenHeight(context) * 0.4,
+                height: KSizes.homePrimaryHeaderHeight,
+                width: KSizes.homePrimaryHeaderHeight,
                 bgColor: KColors.white.withValues(alpha: 0.4),
               ),
             ),
@@ -34,8 +34,8 @@ class KPrimaryHeaderContainer extends StatelessWidget {
               bottom: -50,
               right: -250,
               child: KCircularContainer(
-                height: KDeviceHelper.getScreenHeight(context) * 0.4,
-                width: KDeviceHelper.getScreenHeight(context) * 0.4,
+                height: KSizes.homePrimaryHeaderHeight,
+                width: KSizes.homePrimaryHeaderHeight,
                 bgColor: KColors.white.withValues(alpha: 0.4),
               ),
             ),
