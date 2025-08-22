@@ -36,4 +36,13 @@ class KImages {
   static const String sportsShoesIcon =
       'assets/icons/category/sports_shoes.png';
   static const String watchIcon = 'assets/icons/category/watch.png';
+
+
+  // Banners
+  static const String homeBanner1 = 'assets/banners/banner_1.jpg';
+  static const String homeBanner2 = 'assets/banners/banner_2.jpg';
+  static const String homeBanner3 = 'assets/banners/banner_3.jpg';
+  static const String homeBanner4 = 'assets/banners/banner_4.jpg';
+  static const String homeBanner5 = 'assets/banners/banner_5.jpg';
+  static const String homeBanner6 = 'assets/banners/banner_6.jpg';
 }
