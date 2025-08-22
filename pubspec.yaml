@@ -40,6 +40,7 @@ flutter:
     - assets/images/
     - assets/fonts/
     - assets/animation/
+    - assets/icons/category/
 
 
 

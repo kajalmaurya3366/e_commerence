@@ -61,4 +61,7 @@ class KTexts {
   static const unknownPro='Unknown Pro';
   static const searchBarTitle='Search in Store';
 
+
+  static const popularCategory='Popular Category';
+
 }

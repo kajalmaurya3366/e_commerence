@@ -11,11 +11,13 @@ class KCircularContainer extends StatelessWidget {
      this.bgColor=KColors.white,
      this.padding,
      this.margin,
+    this.child,
   });
 
   final double height, width, radius;
   final Color bgColor;
   final EdgeInsetsGeometry? padding, margin;
+  final Widget? child;
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +30,7 @@ class KCircularContainer extends StatelessWidget {
         color: bgColor,
         borderRadius: BorderRadius.circular(radius),
       ),
+      child: child,
     );
   }
 }
