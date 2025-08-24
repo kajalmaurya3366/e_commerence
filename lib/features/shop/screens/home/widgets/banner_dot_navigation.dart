@@ -11,8 +11,8 @@ class BannerDotNavigation extends StatelessWidget {
     final controller = HomeController.instance;
     return Obx(
       () => SmoothPageIndicator(
-        count: 6,
-        effect: ExpandingDotsEffect(dotHeight: 6),
+        count: 5,
+        effect: ExpandingDotsEffect(dotHeight: 4),
         controller: PageController(initialPage: controller.currentIndex.value),
       ),
     );

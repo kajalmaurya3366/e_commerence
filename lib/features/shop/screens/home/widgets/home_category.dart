@@ -23,7 +23,7 @@ class KHomeCategories extends StatelessWidget {
               context,
             ).textTheme.headlineMedium!.apply(color: KColors.white),
           ),
-          SizedBox(height: KSizes.spaceBtwSections),
+          SizedBox(height: KSizes.spaceBtwItems),
 
           // ------------ icon & text -----------------
           SizedBox(
