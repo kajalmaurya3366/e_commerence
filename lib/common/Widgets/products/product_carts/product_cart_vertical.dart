@@ -9,7 +9,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../utils/constant/sizes.dart';
 import '../../../style/shadow.dart';
 import '../../custome_shape/clipper/rounded_container.dart';
-import '../../texts/brand_title_text.dart';
+
 import '../../texts/brand_title_with_verify_icon.dart';
 import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
