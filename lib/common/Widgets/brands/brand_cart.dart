@@ -11,14 +11,16 @@ import '../texts/brand_title_with_verify_icon.dart';
 
 class KBrandCart extends StatelessWidget {
   const KBrandCart({
-    super.key,
+    super.key, this.showBorder=true,
   });
 
+  final bool showBorder;
   @override
   Widget build(BuildContext context) {
     return KRoundedContainer(
+      height: KSizes.brandCardHeight,
       width: KSizes.brandCardWidth,
-      showBorder: true,
+      showBorder: showBorder,
       padding: EdgeInsets.all(KSizes.sm),
       bgColor: Colors.transparent,
       child: Row(
