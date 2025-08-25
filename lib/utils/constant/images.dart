@@ -47,4 +47,7 @@ class KImages {
 
 
   static const String productImage1 = 'assets/products/product 15.png';
+
+  // Brands
+  static const String bataIcon = 'assets/brands/bata.png';
 }

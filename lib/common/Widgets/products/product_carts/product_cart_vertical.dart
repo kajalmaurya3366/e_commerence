@@ -9,6 +9,8 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../utils/constant/sizes.dart';
 import '../../../style/shadow.dart';
 import '../../custome_shape/clipper/rounded_container.dart';
+import '../../texts/brand_title_text.dart';
+import '../../texts/brand_title_with_verify_icon.dart';
 import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
 
@@ -84,22 +86,7 @@ class KProductCartVertical extends StatelessWidget {
                   SizedBox(height: KSizes.spaceBtwItems / 2),
 
                   // ------------ product brand ------------
-                  Row(
-                    children: [
-                      Text(
-                        'Bata',
-                        style: Theme.of(context).textTheme.labelMedium,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      SizedBox(width: KSizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: KColors.primary,
-                        size: KSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  KBrandTitleWIthVerifyIcon(title: 'Bata',),
                 ],
               ),
             ),
@@ -133,3 +120,7 @@ class KProductCartVertical extends StatelessWidget {
     );
   }
 }
+
+
+
+

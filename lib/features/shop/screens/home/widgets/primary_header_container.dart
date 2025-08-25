@@ -6,15 +6,20 @@ import '../../../../../common/Widgets/custome_shape/clipper/circular_container.d
 import '../../../../../utils/constant/colors.dart';
 
 class KPrimaryHeaderContainer extends StatelessWidget {
-  const KPrimaryHeaderContainer({super.key, required this.child});
+  const KPrimaryHeaderContainer({
+    super.key,
+    required this.child,
+    required this.height,
+  });
 
   final Widget child;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
     return KRoundedEdgeContainer(
       child: Container(
-        height: KSizes.homePrimaryHeaderHeight,
+        height: height,
         color: KColors.primary,
         child: Stack(
           children: [
@@ -25,7 +30,7 @@ class KPrimaryHeaderContainer extends StatelessWidget {
               child: KCircularContainer(
                 height: KSizes.homePrimaryHeaderHeight,
                 width: KSizes.homePrimaryHeaderHeight,
-                bgColor: KColors.white.withValues(alpha: 0.4),
+                bgColor: KColors.white.withValues(alpha: 0.2),
               ),
             ),
 
@@ -36,7 +41,7 @@ class KPrimaryHeaderContainer extends StatelessWidget {
               child: KCircularContainer(
                 height: KSizes.homePrimaryHeaderHeight,
                 width: KSizes.homePrimaryHeaderHeight,
-                bgColor: KColors.white.withValues(alpha: 0.4),
+                bgColor: KColors.white.withValues(alpha: 0.1),
               ),
             ),
 
@@ -48,4 +53,3 @@ class KPrimaryHeaderContainer extends StatelessWidget {
     );
   }
 }
-
