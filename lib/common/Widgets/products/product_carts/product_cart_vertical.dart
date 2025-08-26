@@ -31,17 +31,19 @@ class KProductCartVertical extends StatelessWidget {
           color: dark ? KColors.darkerGrey : KColors.white,
         ),
         child: Column(
+
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // -------- Thumbnail, Button and Discount Tag ---------------
 
             KRoundedContainer(
-              width: 180,
+              height: 180,
               padding: EdgeInsets.all(KSizes.sm),
               bgColor: dark ? KColors.dark : KColors.light,
               child: Stack(
                 children: [
                   // ------------ thumbnail -----------
-                  KRoundedImage(imageUrl: KImages.productImage1),
+                  Center(child: KRoundedImage(imageUrl: KImages.productImage1)),
 
                   // ------------ Discount Tag ---------------
                   Positioned(

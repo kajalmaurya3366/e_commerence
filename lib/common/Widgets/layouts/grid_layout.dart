@@ -6,12 +6,12 @@ class KGridLayout extends StatelessWidget {
   const KGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisCount =288,
+    this.mainAxisExtent =288,
     required this.itemBuilder,
   });
 
   final int itemCount;
-  final double? mainAxisCount;
+  final double? mainAxisExtent;
   final Widget Function(BuildContext context, int index) itemBuilder;
 
   @override
@@ -23,7 +23,7 @@ class KGridLayout extends StatelessWidget {
       shrinkWrap: true,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisExtent: mainAxisCount,
+        mainAxisExtent: mainAxisExtent,
         mainAxisSpacing: KSizes.gridViewSpacing,
         crossAxisSpacing: KSizes.gridViewSpacing,
       ),

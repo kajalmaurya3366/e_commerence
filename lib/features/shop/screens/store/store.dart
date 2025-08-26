@@ -48,7 +48,7 @@ class StoreScreen extends StatelessWidget {
                             SizedBox(
                               height: KSizes.brandCardHeight,
                               child: ListView.separated(
-                                itemBuilder: (context, index) => KBrandCart(),
+                                itemBuilder: (context, index) => SizedBox(width:KSizes.brandCardWidth,child: KBrandCart()),
                                 itemCount: 10,
                                 scrollDirection: Axis.horizontal,
                                 shrinkWrap: true,
