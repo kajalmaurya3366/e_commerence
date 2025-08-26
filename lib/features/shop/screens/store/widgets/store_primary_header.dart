@@ -5,7 +5,7 @@ import '../../../../../common/Widgets/products/cart/cart_counter_icon.dart';
 import '../../../../../common/Widgets/textfields/search_bar.dart';
 import '../../../../../utils/constant/colors.dart';
 import '../../../../../utils/constant/sizes.dart';
-import '../../home/widgets/primary_header_container.dart';
+import '../../../../../common/Widgets/custome_shape/primary_header_container.dart';
 
 class KStorePrimaryHeader extends StatelessWidget {
   const KStorePrimaryHeader({super.key});

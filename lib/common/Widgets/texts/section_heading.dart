@@ -7,11 +7,13 @@ class KSectionHeading extends StatelessWidget {
     required this.title,
     this.buttonTitle='View all',
     this.onPressed,
+    this.showActionBtn=true,
   });
 
   final Color? textColor;
   final String title, buttonTitle;
   final VoidCallback? onPressed;
+  final bool showActionBtn;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,7 @@ class KSectionHeading extends StatelessWidget {
           title,
           style: Theme.of(context).textTheme.headlineSmall!.apply(color: textColor),maxLines: 1,overflow: TextOverflow.ellipsis,
         ),
-        TextButton(onPressed: onPressed, child: Text(buttonTitle)),
+        if(showActionBtn)TextButton(onPressed: onPressed, child: Text(buttonTitle)),
       ],
     );
   }

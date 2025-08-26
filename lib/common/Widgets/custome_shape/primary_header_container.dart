@@ -1,9 +1,9 @@
-import 'package:e_commerence/common/Widgets/custome_shape/clipper/rounded_edge_container.dart';
+import 'package:e_commerence/common/Widgets/custome_shape/rounded_edge_container.dart';
 import 'package:e_commerence/utils/constant/sizes.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../common/Widgets/custome_shape/clipper/circular_container.dart';
-import '../../../../../utils/constant/colors.dart';
+import 'circular_container.dart';
+import '../../../utils/constant/colors.dart';
 
 class KPrimaryHeaderContainer extends StatelessWidget {
   const KPrimaryHeaderContainer({

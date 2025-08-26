@@ -1,7 +1,7 @@
 import 'package:e_commerence/features/shop/controllers/home/home_controller.dart';
 import 'package:e_commerence/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:e_commerence/features/shop/screens/home/widgets/home_category.dart';
-import 'package:e_commerence/features/shop/screens/home/widgets/primary_header_container.dart';
+import 'package:e_commerence/common/Widgets/custome_shape/primary_header_container.dart';
 import 'package:e_commerence/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerence/utils/constant/images.dart';
 import 'package:e_commerence/utils/constant/sizes.dart';

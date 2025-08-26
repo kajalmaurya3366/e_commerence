@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/constant/colors.dart';
 import '../../../utils/constant/sizes.dart';
-import '../custome_shape/clipper/circular_container.dart';
+import '../custome_shape/circular_container.dart';
 
 class KVerticalImageText extends StatelessWidget {
   const KVerticalImageText({

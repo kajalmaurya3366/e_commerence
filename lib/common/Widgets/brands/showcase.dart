@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../utils/constant/colors.dart';
 
 import '../../../utils/constant/sizes.dart';
-import '../custome_shape/clipper/rounded_container.dart';
+import '../custome_shape/rounded_container.dart';
 import 'brand_cart.dart';
 
 class KBrandShowcase extends StatelessWidget {

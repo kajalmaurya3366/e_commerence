@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'features/personalization/screens/profile/profile.dart';
+
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
 
@@ -46,6 +48,6 @@ class NavigationController extends GetxController {
     HomeScreen(),
     StoreScreen(),
     WishListScreen(),
-    Container(color: Colors.yellow),
+    ProfileScreen(),
   ];
 }
