@@ -1,9 +1,11 @@
 import 'package:e_commerence/common/Widgets/icons/circular_icon.dart';
 import 'package:e_commerence/common/Widgets/images/rounded_image.dart';
+import 'package:e_commerence/features/shop/screens/product_details/product_details.dart';
 import 'package:e_commerence/utils/constant/colors.dart';
 import 'package:e_commerence/utils/constant/images.dart';
 import 'package:e_commerence/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constant/sizes.dart';
@@ -21,7 +23,7 @@ class KProductCartVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = KHelperFunction.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(ProductDetailsScreen()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),

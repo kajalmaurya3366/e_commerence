@@ -13,7 +13,8 @@ class KElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: KDeviceHelper.getScreenWidth(context),
-        child: ElevatedButton(onPressed: onPressed, child: child),
+        child: ElevatedButton(onPressed: onPressed, child: child,),
+
     );
   }
 }
