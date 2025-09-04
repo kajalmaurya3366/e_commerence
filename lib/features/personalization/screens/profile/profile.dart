@@ -1,10 +1,12 @@
 
 import 'package:e_commerence/common/Widgets/texts/section_heading.dart';
+import 'package:e_commerence/features/personalization/screens/address/address.dart';
 import 'package:e_commerence/features/personalization/screens/profile/widgets/profile_primary_header.dart';
 import 'package:e_commerence/features/personalization/screens/profile/widgets/setting_menu_tile.dart';
 import 'package:e_commerence/features/personalization/screens/profile/widgets/user_profile_tile.dart';
 import 'package:e_commerence/utils/constant/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -37,16 +39,19 @@ class ProfileScreen extends StatelessWidget {
                   title: 'My Address',
                   subtitle: 'Set shopping delivery addresses',
                   icon: Iconsax.safe_home,
+                  onTap:()=> Get.to(AddressScreen()) ,
                 ),
                 SettingMenuTile(
                   title: 'My Cart',
                   subtitle: 'Add, remove products and move to checkout.',
                   icon: Iconsax.shopping_cart,
+                  onTap: (){},
                 ),
                 SettingMenuTile(
                   title: 'My Orders',
                   subtitle: 'In-progress and completed orders.',
                   icon: Iconsax.bag_tick,
+                  onTap: (){},
                 ),
 
                 //================ Logout Btn ================
