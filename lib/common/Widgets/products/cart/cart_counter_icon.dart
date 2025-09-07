@@ -1,5 +1,7 @@
+import 'package:e_commerence/features/shop/screens/cart/cart.dart';
 import 'package:e_commerence/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constant/colors.dart';
@@ -14,7 +16,7 @@ class KCartCounterIcon extends StatelessWidget {
       children: [
         // ------------- BAG ICON -----------------
         IconButton(
-          onPressed: () {},
+          onPressed: () => Get.to(CartScreen()),
           icon: Icon(Iconsax.shopping_bag),
           color: KColors.white,
         ),

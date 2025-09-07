@@ -16,7 +16,6 @@ class ProductDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = KHelperFunction.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
