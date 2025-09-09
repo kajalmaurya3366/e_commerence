@@ -9,7 +9,6 @@ import 'package:e_commerence/features/shop/screens/checkout/widget/billing_payme
 import 'package:e_commerence/navigation_menu.dart';
 import 'package:e_commerence/utils/constant/images.dart';
 import 'package:e_commerence/utils/constant/sizes.dart';
-import 'package:e_commerence/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +20,6 @@ class CheckoutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = KHelperFunction.isDarkMode(context);
     return Scaffold(
       appBar: KAppBar(
         showBackArrow: true,

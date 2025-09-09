@@ -2,7 +2,6 @@ import 'package:e_commerence/common/Widgets/texts/section_heading.dart';
 import 'package:e_commerence/common/style/padding.dart';
 
 import 'package:e_commerence/utils/constant/sizes.dart';
-import 'package:e_commerence/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../common/Widgets/app_bar/appbar.dart';
@@ -14,7 +13,6 @@ class SubCategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool dark = KHelperFunction.isDarkMode(context);
     return Scaffold(
       appBar: KAppBar(
         showBackArrow: true,

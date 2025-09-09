@@ -9,6 +9,8 @@ import '../../../../common/Widgets/Button/social_buttons.dart';
 import '../../../../common/Widgets/login_signup/form_divider.dart';
 
 class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final isDark = KHelperFunction.isDarkMode(context);
