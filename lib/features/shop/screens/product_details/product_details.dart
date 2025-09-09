@@ -7,7 +7,6 @@ import 'package:e_commerence/features/shop/screens/product_details/widget/produc
 import 'package:e_commerence/features/shop/screens/product_details/widget/product_thumbnail_and_slider.dart';
 import 'package:e_commerence/utils/constant/sizes.dart';
 
-import 'package:e_commerence/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
 

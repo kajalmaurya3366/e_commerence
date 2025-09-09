@@ -4,6 +4,7 @@ import 'package:e_commerence/features/personalization/screens/address/address.da
 import 'package:e_commerence/features/personalization/screens/profile/widgets/profile_primary_header.dart';
 import 'package:e_commerence/features/personalization/screens/profile/widgets/setting_menu_tile.dart';
 import 'package:e_commerence/features/personalization/screens/profile/widgets/user_profile_tile.dart';
+import 'package:e_commerence/features/shop/screens/order/order.dart';
 import 'package:e_commerence/utils/constant/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -51,7 +52,7 @@ class ProfileScreen extends StatelessWidget {
                   title: 'My Orders',
                   subtitle: 'In-progress and completed orders.',
                   icon: Iconsax.bag_tick,
-                  onTap: (){},
+                  onTap: () => Get.to(OrderScreen()),
                 ),
 
                 //================ Logout Btn ================
