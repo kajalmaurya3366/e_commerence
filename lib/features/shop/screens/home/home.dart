@@ -1,4 +1,5 @@
 import 'package:e_commerence/features/shop/controllers/home/home_controller.dart';
+import 'package:e_commerence/features/shop/screens/all_products/all_products.dart';
 import 'package:e_commerence/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:e_commerence/features/shop/screens/home/widgets/home_category.dart';
 import 'package:e_commerence/common/Widgets/custome_shape/primary_header_container.dart';
@@ -68,7 +69,7 @@ class HomeScreen extends StatelessWidget {
 
                   // ---------- Section Heading ----------------
                   SizedBox(height: KSizes.spaceBtwSections / 2),
-                  KSectionHeading(title: 'Popular Products', onPressed: () {}),
+                  KSectionHeading(title: 'Popular Products', onPressed: () => Get.to(AllProductsScreen())),
                   SizedBox(height: KSizes.spaceBtwItems),
 
                   // --------------- Vertical card ---------------

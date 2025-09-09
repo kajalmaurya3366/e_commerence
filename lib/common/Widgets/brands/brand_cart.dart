@@ -8,49 +8,53 @@ import '../images/rounded_image.dart';
 import '../texts/brand_title_with_verify_icon.dart';
 
 class KBrandCart extends StatelessWidget {
-  const KBrandCart({super.key, this.showBorder = true});
+  const KBrandCart({super.key, this.showBorder = true,this.onTap});
 
   final bool showBorder;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return KRoundedContainer(
-      height: KSizes.brandCardHeight,
-      showBorder: showBorder,
-      padding: EdgeInsets.all(KSizes.sm),
-      bgColor: Colors.transparent,
-      child: Row(
-        children: [
-          // ----Brand Image ----
-          Flexible(
-            child: KRoundedImage(
-              imageUrl: KImages.bataIcon,
-              bgColor: Colors.transparent,
+    return GestureDetector(
+      onTap: onTap,
+      child: KRoundedContainer(
+        height: KSizes.brandCardHeight,
+        showBorder: showBorder,
+        padding: EdgeInsets.all(KSizes.sm),
+        bgColor: Colors.transparent,
+        child: Row(
+          children: [
+            // ----Brand Image ----
+            Flexible(
+              child: KRoundedImage(
+                imageUrl: KImages.bataIcon,
+                bgColor: Colors.transparent,
+              ),
             ),
-          ),
-          SizedBox(width: KSizes.spaceBtwItems / 2),
-
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                //---- brand Name & Icon -----
-                KBrandTitleWIthVerifyIcon(
-                  title: 'Bata',
-                  brandTextSizes: TextSizes.large,
-                ),
-
-                //---- Product count -----
-                Text(
-                  '123 Products',
-                  style: Theme.of(context).textTheme.labelMedium,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
+            SizedBox(width: KSizes.spaceBtwItems / 2),
+      
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  //---- brand Name & Icon -----
+                  KBrandTitleWIthVerifyIcon(
+                    title: 'Bata',
+                    brandTextSizes: TextSizes.large,
+                  ),
+      
+                  //---- Product count -----
+                  Text(
+                    '123 Products',
+                    style: Theme.of(context).textTheme.labelMedium,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
