@@ -1,5 +1,7 @@
+import 'package:e_commerence/features/shop/screens/sub_catergory/sub_category.dart';
 import 'package:e_commerence/utils/constant/images.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../common/Widgets/img_text/vertical_img_text.dart';
 import '../../../../../utils/constant/colors.dart';
@@ -37,6 +39,7 @@ class KHomeCategories extends StatelessWidget {
                   title: 'Sports Category',
                   image: KImages.sportsIcon,
                   textColor: KColors.white,
+                  onTap: () => Get.to(SubCategoryScreen()),
                 );
               },
             ),
