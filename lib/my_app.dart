@@ -1,3 +1,4 @@
+import 'package:e_commerence/utils/constant/colors.dart';
 import 'package:e_commerence/utils/themes/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,7 +15,12 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: KThemes.lightTheme,
       darkTheme: KThemes.darkTheme,
-      home: OnBoarding(),
+      home: Scaffold(
+        backgroundColor: KColors.primary,
+        body: Center(
+          child: CircularProgressIndicator(color: KColors.white,),
+        ),
+      ),
     );
   }
 }
